@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Homepage">
+
+
+    <TextView
+        android:id="@+id/titleC"
+        android:layout_width="255dp"
+        android:layout_height="62dp"
+        android:text="CATEGORIES"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <ImageButton
+        android:id="@+id/biology"
+        android:layout_width="209dp"
+        android:layout_height="110dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:onClick="moveToBio"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/biology" />
+
+    <ImageButton
+        android:id="@+id/chemistry"
+        android:layout_width="209dp"
+        android:layout_height="110dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:onClick="moveToChem"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/chemistry" />
+
+    <ImageButton
+        android:id="@+id/physics"
+        android:layout_width="209dp"
+        android:layout_height="110dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:onClick="moveToPhys"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/biology"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/physics" />
+
+    <ImageButton
+        android:id="@+id/it"
+        android:layout_width="209dp"
+        android:layout_height="110dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:onClick="moveToIT"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chemistry"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/it" />
+
+    <ImageButton
+        android:id="@+id/math"
+        android:layout_width="209dp"
+        android:layout_height="110dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:onClick="moveToMath"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/physics"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/math" />
+
+    <ImageButton
+        android:id="@+id/history"
+        android:layout_width="123dp"
+        android:layout_height="134dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:onClick="moveToHis"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/it"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/history" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

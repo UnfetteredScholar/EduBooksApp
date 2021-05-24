@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".History">
+
+    <ImageButton
+        android:id="@+id/h1"
+        android:layout_width="185dp"
+        android:layout_height="192dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:onClick="downloadFile1"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237"
+        app:srcCompat="@drawable/h4" />
+
+    <ImageButton
+        android:id="@+id/h2"
+        android:layout_width="185dp"
+        android:layout_height="192dp"
+        android:layout_marginEnd="4dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:onClick="downloadFile2"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toEndOf="@+id/h1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237"
+        app:srcCompat="@drawable/h5" />
+
+    <ImageButton
+        android:id="@+id/h3"
+        android:layout_width="185dp"
+        android:layout_height="192dp"
+        android:layout_marginBottom="80dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:onClick="downloadFile3"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/h1"
+        app:layout_constraintVertical_bias="0.194"
+        app:srcCompat="@drawable/h6" />
+
+    <ImageButton
+        android:id="@+id/h4"
+        android:layout_width="147dp"
+        android:layout_height="195dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:onClick="downloadFile4"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toEndOf="@+id/h3"
+        app:layout_constraintTop_toBottomOf="@+id/h2"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/h7" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <TextView
+        android:id="@+id/rLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="moveToRequests"
+        android:text="@string/request_books"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.816" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
